@@ -1,0 +1,51 @@
+
+
+
+
+/*create table songSheet(
+   
+ sheetName varchar(120) primary key unique,  #声明外键必须使用unique
+
+    createTime varchar(30),
+ 
+   tag varchar (50),
+  
+  introduce text,
+  
+  cover varchar(200),
+  
+  foreign key(sheetName) references songs(sheetName)
+    
+)*/
+
+
+/*create table songs(
+  
+  sheetName varchar(120) primary key,
+ 
+   title varchar(100),
+  
+  ttime  varchar(20),
+  
+  singer varchar(50),
+  
+  album varchar(150)
+
+
+)*/
+
+
+
+
+select songSheet.sheetName,songs.title,songs.ttime
+ 
+ from songSheet,songs
+ 
+ where songSheet.sheetName=songs.sheetName
+
+
+
+
+
+
+
